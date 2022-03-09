@@ -31,8 +31,7 @@ jobs:
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
-      #on ajoute les infos du dockerhub pour créer l'image
-        image: moussanho/tp_docker
+        image: moussanho/docker_new
         tag: v3
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
